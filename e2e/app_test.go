@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/peak/s5cmd/command"
+	"github.com/kmiku7/s5cmd/command"
 
 	"gotest.tools/v3/assert"
 	"gotest.tools/v3/icmd"

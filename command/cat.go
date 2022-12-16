@@ -8,9 +8,9 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/peak/s5cmd/log/stat"
-	"github.com/peak/s5cmd/storage"
-	"github.com/peak/s5cmd/storage/url"
+	"github.com/kmiku7/s5cmd/log/stat"
+	"github.com/kmiku7/s5cmd/storage"
+	"github.com/kmiku7/s5cmd/storage/url"
 )
 
 var catHelpTemplate = `Name:

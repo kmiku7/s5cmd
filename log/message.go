@@ -3,8 +3,8 @@ package log
 import (
 	"fmt"
 
-	"github.com/peak/s5cmd/storage/url"
-	"github.com/peak/s5cmd/strutil"
+	"github.com/kmiku7/s5cmd/storage/url"
+	"github.com/kmiku7/s5cmd/strutil"
 )
 
 // Message is an interface to print structured logs.

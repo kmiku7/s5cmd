@@ -7,11 +7,11 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/urfave/cli/v2"
 
-	errorpkg "github.com/peak/s5cmd/error"
-	"github.com/peak/s5cmd/log"
-	"github.com/peak/s5cmd/log/stat"
-	"github.com/peak/s5cmd/storage"
-	"github.com/peak/s5cmd/storage/url"
+	errorpkg "github.com/kmiku7/s5cmd/error"
+	"github.com/kmiku7/s5cmd/log"
+	"github.com/kmiku7/s5cmd/log/stat"
+	"github.com/kmiku7/s5cmd/storage"
+	"github.com/kmiku7/s5cmd/storage/url"
 )
 
 var deleteHelpTemplate = `Name:

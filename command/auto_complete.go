@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/peak/s5cmd/storage"
-	"github.com/peak/s5cmd/storage/url"
+	"github.com/kmiku7/s5cmd/storage"
+	"github.com/kmiku7/s5cmd/storage/url"
 	"github.com/urfave/cli/v2"
 )
 

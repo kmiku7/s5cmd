@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/peak/s5cmd/storage"
-	"github.com/peak/s5cmd/strutil"
+	"github.com/kmiku7/s5cmd/storage"
+	"github.com/kmiku7/s5cmd/strutil"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"

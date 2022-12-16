@@ -6,9 +6,9 @@ import (
 
 	"github.com/hashicorp/go-multierror"
 
-	errorpkg "github.com/peak/s5cmd/error"
-	"github.com/peak/s5cmd/log"
-	"github.com/peak/s5cmd/storage/url"
+	errorpkg "github.com/kmiku7/s5cmd/error"
+	"github.com/kmiku7/s5cmd/log"
+	"github.com/kmiku7/s5cmd/storage/url"
 )
 
 func printDebug(op string, err error, urls ...*url.URL) {

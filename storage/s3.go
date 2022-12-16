@@ -30,8 +30,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
 	"github.com/aws/aws-sdk-go/service/s3/s3manager/s3manageriface"
 
-	"github.com/peak/s5cmd/log"
-	"github.com/peak/s5cmd/storage/url"
+	"github.com/kmiku7/s5cmd/log"
+	"github.com/kmiku7/s5cmd/storage/url"
 )
 
 var sentinelURL = urlpkg.URL{}

@@ -1,4 +1,4 @@
-[![Go Report](https://goreportcard.com/badge/github.com/peak/s5cmd)](https://goreportcard.com/report/github.com/peak/s5cmd) ![Github Actions Status](https://github.com/peak/s5cmd/workflows/CI/badge.svg)
+[![Go Report](https://goreportcard.com/badge/github.com/kmiku7/s5cmd)](https://goreportcard.com/report/github.com/kmiku7/s5cmd) ![Github Actions Status](https://github.com/kmiku7/s5cmd/workflows/CI/badge.svg)
 
 ![](./doc/s5cmd_header.jpg)
 
@@ -52,14 +52,14 @@ storage services and local filesystems.
 
 #### Binaries
 
-The [Releases](https://github.com/peak/s5cmd/releases) page provides pre-built
+The [Releases](https://github.com/kmiku7/s5cmd/releases) page provides pre-built
 binaries for Linux, macOS and Windows.
 
 #### Homebrew
 
 For macOS, a [homebrew](https://brew.sh) tap is provided:
 
-    brew install peak/tap/s5cmd
+    brew install kmiku7/tap/s5cmd
 
 ### Unofficial Releases (by Community)
 [![Packaging status](https://repology.org/badge/tiny-repos/s5cmd.svg)](https://repology.org/project/s5cmd/versions)
@@ -94,7 +94,7 @@ ps.  Quoted from [s5cmd feedstock](https://github.com/conda-forge/s5cmd-feedstoc
 You can build `s5cmd` from source if you have [Go](https://golang.org/dl/) 1.17+
 installed.
 
-    go get github.com/peak/s5cmd
+    go get github.com/kmiku7/s5cmd
 
 ⚠️ Please note that building from `master` is not guaranteed to be stable since
 development happens on `master` branch.
@@ -102,15 +102,15 @@ development happens on `master` branch.
 ### Docker
 
 #### Hub
-    $ docker pull peakcom/s5cmd
-    $ docker run --rm -v ~/.aws:/root/.aws peakcom/s5cmd <S3 operation>
+    $ docker pull kmiku7com/s5cmd
+    $ docker run --rm -v ~/.aws:/root/.aws kmiku7com/s5cmd <S3 operation>
 
 ℹ️ `/aws` directory is the working directory of the image. Mounting your current working directory to it allows you to run `s5cmd` as if it was installed in your system;
 
-    docker run --rm -v $(pwd):/aws -v ~/.aws:/root/.aws peakcom/s5cmd <S3 operation>
+    docker run --rm -v $(pwd):/aws -v ~/.aws:/root/.aws kmiku7com/s5cmd <S3 operation>
 
 #### Build
-    $ git clone https://github.com/peak/s5cmd && cd s5cmd
+    $ git clone https://github.com/kmiku7/s5cmd && cd s5cmd
     $ docker build -t s5cmd .
     $ docker run --rm -v ~/.aws:/root/.aws s5cmd <S3 operation>
 
@@ -238,7 +238,7 @@ Will copy all the matching objects to the given S3 prefix, respecting the source
 folder hierarchy.
 
 ⚠️ Copying objects (from S3 to S3) larger than 5GB is not supported yet. We have
-an [open ticket](https://github.com/peak/s5cmd/issues/29) to track the issue.
+an [open ticket](https://github.com/kmiku7/s5cmd/issues/29) to track the issue.
 
 #### Select JSON object content using SQL
 
@@ -546,8 +546,8 @@ ERROR "cp s3://somebucket/file.txt file.txt": object already exists
 
 ### numworkers
 
-`numworkers` is a global option that sets the size of the global worker pool. Default value of `numworkers` is [256](https://github.com/peak/s5cmd/blob/master/command/app.go#L18).
-Commands such as `cp`, `select` and `run`, which can benefit from parallelism use this worker pool to execute tasks. A task can be an upload, a download or anything in a [`run` file](https://github.com/peak/s5cmd/blob/master/command/app.go#L18).
+`numworkers` is a global option that sets the size of the global worker pool. Default value of `numworkers` is [256](https://github.com/kmiku7/s5cmd/blob/master/command/app.go#L18).
+Commands such as `cp`, `select` and `run`, which can benefit from parallelism use this worker pool to execute tasks. A task can be an upload, a download or anything in a [`run` file](https://github.com/kmiku7/s5cmd/blob/master/command/app.go#L18).
 
 For example, if you are uploading 100 files to an S3 bucket and the `--numworkers` is set to 10, then `s5cmd` will limit the number of files concurrently uploaded to 10.
 
@@ -663,4 +663,4 @@ significant runtime difference between those two approaches.
 
 # LICENSE
 
-MIT. See [LICENSE](https://github.com/peak/s5cmd/blob/master/LICENSE).
+MIT. See [LICENSE](https://github.com/kmiku7/s5cmd/blob/master/LICENSE).

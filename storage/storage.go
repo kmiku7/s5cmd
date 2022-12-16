@@ -8,9 +8,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/peak/s5cmd/log"
-	"github.com/peak/s5cmd/storage/url"
-	"github.com/peak/s5cmd/strutil"
+	"github.com/kmiku7/s5cmd/log"
+	"github.com/kmiku7/s5cmd/storage/url"
+	"github.com/kmiku7/s5cmd/strutil"
 )
 
 var (

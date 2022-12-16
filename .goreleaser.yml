@@ -4,7 +4,7 @@ before:
 builds:
   -
     binary: s5cmd
-    ldflags: -s -w -X github.com/peak/s5cmd/version.Version={{.Tag}} -X github.com/peak/s5cmd/version.GitCommit={{ .ShortCommit }}
+    ldflags: -s -w -X github.com/kmiku7/s5cmd/version.Version={{.Tag}} -X github.com/kmiku7/s5cmd/version.GitCommit={{ .ShortCommit }}
     env:
       - CGO_ENABLED=0
     goos:
@@ -49,12 +49,12 @@ changelog:
 
 brews:
   - tap:
-      owner: peak
+      owner: kmiku7
       name: homebrew-tap
     folder: Formula
     name: s5cmd
     description: Parallel S3 and local filesystem execution tool
-    homepage: https://github.com/peak/s5cmd
+    homepage: https://github.com/kmiku7/s5cmd
     license: MIT
     test: |
       system "#{bin}/s5cmd version"
@@ -62,9 +62,9 @@ brews:
 nfpms:
   -
     vendor: Peak
-    homepage: https://github.com/peak/s5cmd
+    homepage: https://github.com/kmiku7/s5cmd
     license: MIT
-    maintainer: Peak <packaging@peak.com>
+    maintainer: Peak <packaging@kmiku7.com>
     description: |-
       Very fast S3 and local filesystem execution tool. It comes with support
       for a multitude of operations including tab completion and wildcard

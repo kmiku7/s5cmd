@@ -7,7 +7,7 @@ import (
 	"sync"
 	"text/tabwriter"
 
-	"github.com/peak/s5cmd/strutil"
+	"github.com/kmiku7/s5cmd/strutil"
 )
 
 const (

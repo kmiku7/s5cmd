@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/peak/s5cmd/storage/url"
+	"github.com/kmiku7/s5cmd/storage/url"
 	"github.com/urfave/cli/v2"
 )
 

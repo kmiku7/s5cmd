@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/peak/s5cmd/strutil"
+	"github.com/kmiku7/s5cmd/strutil"
 )
 
 const (
